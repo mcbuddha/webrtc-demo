@@ -1,5 +1,5 @@
 /node_modules
-/static/css/*.css
-/static/html/*.html
-/static/js/*.js
-/*.js
+rtc_helper.js
+view.js
+view2.js
+lodash.min.js
