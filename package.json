@@ -1,12 +1,9 @@
 {
   "name": "rtc",
   "version": "0.0.0",
-  "main": "rtc.js",
   "dependencies": {
       "coffee-script": "*",
       "lodash": "*",
-      "jade": "*",
-      "serve": "*",
-      "stylus": "*"
+      "serve": "*"
   }
 }
