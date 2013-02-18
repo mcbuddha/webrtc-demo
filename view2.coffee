@@ -29,7 +29,7 @@ API.start = ->
   API.conn = RTC.new_conn()
 
   API.conn.onicecandidate = (e) ->
-    API.info.ice.push e.candidate.candidate.trim()
+    API.info.ice.push e.candidate.candidate.trim() if e.candidate?
 
   API.conn.ondatachannel = (e) ->
     ___ 'opened chan'

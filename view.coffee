@@ -18,7 +18,8 @@ API.deliver = (answer_str) -> # deliver peer answer
 
 API.offer = ->
   API.conn = RTC.new_conn()
-  API.conn.onicecandidate = (e) -> API.info.ice.push e.candidate.candidate.trim()
+  API.conn.onicecandidate = (e) ->
+    API.info.ice.push e.candidate.candidate.trim() if e.candidate?
 
   API.chan = API.conn.createDataChannel 'chan_label',reliable:off
   API.chan.onopen = ->
